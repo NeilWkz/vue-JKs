@@ -1,6 +1,13 @@
 @import './vendor/bootstrap/bootstrap.scss';
+@import './partials/_book-animation';
 
 body {
 	background: #273c75;
 	color: #f5f6fa;
+}
+
+
+
+.main-graphic {
+	max-width: 320px;
 }
