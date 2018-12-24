@@ -26,6 +26,7 @@
   font-size: 8px;
   color: #777;
   font-family: monospace;
+  backface-visibility: hidden;
 }
 .page::before, .page::after {
   display: block;

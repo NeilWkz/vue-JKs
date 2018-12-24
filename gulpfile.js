@@ -28,7 +28,7 @@ gulp.task('scss', function() {
       this.emit('end');
   };
 
-  return gulp.src('scss/style.scss')
+  return gulp.src('scss/*.scss')
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass())
     .pipe(size({ gzip: true, showFiles: true }))

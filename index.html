@@ -10,22 +10,30 @@
 
 <body>
     <div class="container">
-        <div class="col-12">
+        <div class="col-12" id="app">
             <h1 class="text-center"><img class="main-graphic" src="img/vue-jk-asset.svg" alt=""></h1>
-            <div class="col-8 d-flex">
-                <div class="book">
-                  <span class="page turn"></span>
-                  <span class="page turn"></span>
-                  <span class="page turn"></span>
-                  <span class="page turn"></span>
-                  <span class="page turn"></span>
-                  <span class="page turn"></span>
-                  <span class="cover"></span>
-                  <span class="page"></span>
-                  <span class="cover turn"></span>
-                </div>
+            <!-- <div class="col-8 d-flex"> -->
+                <!-- <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <p class="lead">is is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+                    </div>
+                </div> -->
+                <ul class="list-group">
+                    <li class="list-group-item" v-for="joke in json">{{ joke.body }}</li>
+                </ul>
+                <!-- <div class="book">
+                  <span class="page turn">This is text</span>
+                  <span class="page turn">this is tax</span>
+                  <span class="page turn">what is this</span>
+                  <span class="page turn">what could this be?</span>
+                  <span class="page turn">this is another</span>
+                  <span class="page turn">this is the end</span>
+                  <span class="cover">this is the final</span>
+                  <span class="page">this is the joke</span>
+                  <span class="cover turn">this is last</span>
+                </div> -->
             </div>
-        </div>
+        <!-- </div> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <script src="js/main.js"></script>
